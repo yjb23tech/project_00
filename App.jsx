@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client"
 const App = () => {
     return (
         <div>
-            <h1>Sanity Check</h1>
+            <h1>Lundun Grammar</h1>
         </div>
     )
 }
