@@ -2,3 +2,26 @@ html, body {
     margin: 0px; 
     padding: 0px; 
 }
+
+.song-card {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: 0px auto; 
+}
+
+.song-card-cover-art {
+    width: 250px;
+}
+
+.song-card-info-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.song-info-group > img {
+    margin-right: 4px;
+    height: 18px;
+    width: 18px;
+}
+
