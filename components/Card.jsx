@@ -6,7 +6,7 @@ const Card = (props) => {
 
     function handleClick(e) {
         e.preventDefault()
-        console.log("Listening...")
+        console.log("Wake up Neo...")
 
     }
 
