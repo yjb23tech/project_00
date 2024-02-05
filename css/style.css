@@ -1,22 +1,36 @@
 html, body {
     margin: 0px; 
     padding: 0px; 
+    background-color: whitesmoke;
 }
 
 .song-card {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 700px;
     margin: 0px auto; 
+    background-color: white;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 .song-card-cover-art {
     width: 250px;
 }
 
-.song-card-info-group {
+.song-card-contents {
+    width: 350px;
+    margin: 0px auto; 
+}
+
+.song-card-contents > h2 {
+    text-align: center;
+}
+
+.song-info-group {
     display: flex;
     flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .song-info-group > img {
@@ -25,3 +39,14 @@ html, body {
     width: 18px;
 }
 
+/* .util-box-border-red {
+    border: red 1px dotted;
+}
+
+.util-box-border-blue {
+    border: blue 1px dotted; 
+}
+
+.util-box-border-green {
+    border: green 1px dotted; 
+} */
