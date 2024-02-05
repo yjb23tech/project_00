@@ -21,6 +21,10 @@ const Card = (props) => {
                     <img src={genre_icon} />
                     <p>{props.song_genre_title}</p>
                 </div>
+                <div className="song-card-button-set">
+                    <input type="text" placeholder="Tell us what you think!"/>
+                    <button>GO!</button>
+                </div>
             </div>
         </div>
     )

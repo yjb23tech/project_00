@@ -4,7 +4,6 @@ import Card from "./components/Card.jsx"
 const App = () => {
     return (
         <div>
-            <h1>Lundun Grammar</h1>
             <Card 
                 song_cover_art = "track_13_song_art.png"
                 song_title = "Benjamins Burn Remix"
