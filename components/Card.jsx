@@ -12,7 +12,11 @@ const Card = (props) => {
         console.log("Wake up Neo...")
 
         const project_00_DB = ref(db, "project00_comments")
-        push(project_00_DB, "Avon Barksdale")
+
+        const inputEl = document.getElementById("input_field")
+        push(project_00_DB, inputEl.value)
+        inputEl.value = " "
+        // push(project_00_DB, "Avon Barksdale")
 
     }
 
@@ -34,7 +38,7 @@ const Card = (props) => {
                     <p>{props.song_genre_title}</p>
                 </div>
                 <div className="song-card-button-set">
-                    <input type="text" placeholder="Tell us what you think!"/>
+                    <input type="text" id="input_field" placeholder="Tell us what you think!"/>
                     <button onClick={handleClick}>GO!</button>
                 </div>
             </div>
