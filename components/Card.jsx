@@ -4,6 +4,12 @@ import genre_icon from "../public/images/genre_icon.png"
 
 const Card = (props) => {
 
+    function handleClick(e) {
+        e.preventDefault()
+        console.log("Listening...")
+
+    }
+
     return (
         <div className="song-card">
             <img src={`images/${props.song_cover_art}`} className="util-box-border-red song-card-cover-art"/>
@@ -23,7 +29,7 @@ const Card = (props) => {
                 </div>
                 <div className="song-card-button-set">
                     <input type="text" placeholder="Tell us what you think!"/>
-                    <button>GO!</button>
+                    <button onClick={handleClick}>GO!</button>
                 </div>
             </div>
         </div>
