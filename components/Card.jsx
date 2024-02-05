@@ -1,3 +1,6 @@
+import { db } from "../firebase/firebase.js"
+import {ref, push } from "firebase/database"
+
 import album_icon from "../public/images/album_icon.png"
 import artist_icon from "../public/images/artist_icon.png"
 import genre_icon from "../public/images/genre_icon.png"
@@ -7,6 +10,9 @@ const Card = (props) => {
     function handleClick(e) {
         e.preventDefault()
         console.log("Wake up Neo...")
+
+        const project_00_DB = ref(db, "project00_comments")
+        push(project_00_DB, "Avon Barksdale")
 
     }
 
